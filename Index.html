@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uno da Fé: Desafios da Palavra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="selection">
+        <h1>Uno da Fé: Desafios da Palavra</h1>
+        <p>Selecione a cor da carta que você jogou ou o tipo de curinga:</p>
+        <button class="color-btn" data-color="vermelho">Vermelho</button>
+        <button class="color-btn" data-color="azul">Azul</button>
+        <button class="color-btn" data-color="amarelo">Amarelo</button>
+        <button class="color-btn" data-color="verde">Verde</button>
+        <button class="curinga-btn" data-type="curinga">Curinga Simples</button>
+        <button class="curinga-btn" data-type="comprar4">Curinga Comprar 4</button>
+    </div>
+
+    <div id="quiz" style="display:none;">
+        <h2 id="question"></h2>
+        <div id="options"></div>
+    </div>
+
+    <div id="feedback" style="display:none;">
+        <h2 id="result"></h2>
+        <p id="correct-answer"></p>
+        <p id="verse"></p>
+        <p id="game-action"></p>
+        <button id="next">Próximo jogador</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
